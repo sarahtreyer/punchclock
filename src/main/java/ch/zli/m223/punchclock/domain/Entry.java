@@ -29,6 +29,14 @@ public class Entry {
     @JoinColumn(name = "USER_ID")
     private ApplicationUser user;
 
+    @ManyToOne
+    @JoinColumn(name = "CATEGORY_ID")
+    private ApplicationUser category;
+
+    @ManyToOne
+    @JoinColumn(name = "MOOD_ID")
+    private ApplicationUser mood;
+
     public Long getId() {
         return id;
     }
