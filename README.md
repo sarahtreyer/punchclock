@@ -1,13 +1,18 @@
-# M223: Punchclock
-Dies ist eine Beispielapplikation für das Modul M223.
+## Punchclock 
+Mit dieser Applikation können Sie Ihre Arbeitszeit erfassen, in eigene Kategorien (Arbeitszeit, Ferien, Arzttermin)
+einteilen und ihre persönliche Stimmung an dem Tag hinzufügen. 
+Sie können einen eigenen Account erstellen und so die Zeiteinträge optimal verwalten (hinzufügen, löschen, einsehen).
+Geplant und umgesetzt wurde die Applikation für die Mitarbeiter des Restaurants Indiana.
 
-## Loslegen
-Folgende Schritte befolgen um loszulegen:
-1. Sicherstellen, dass JDK 12 installiert und in der Umgebungsvariable `path` definiert ist.
-1. Ins Verzeichnis der Applikation wechseln und über die Kommandozeile mit `./gradlew bootRun` oder `./gradlew.bat bootRun` starten
-1. Unittest mit `./gradlew test` oder `./gradlew.bat test` ausführen.
-1. Ein ausführbares JAR kann mit `./gradlew bootJar` oder `./gradlew.bat bootJar` erstellt werden.
+## Wie startet man die Applikation?
+1. Laden Sie den Ordner 'm223-Punchclock-master' herunter (Laden Sie das .zip File herunter und
+    extrahieren Sie den Ordner).
+2. Öffnen Sie das Terminal und wechseln Sie in den Ordner:
+    cd downloads/m223-Punchclock-Master
+3. Starten Sie die Applikation im Terminal mit dem Command:
+     ./gradlew bootRun
+4. Gehen Sie im Browser auf die URL:
+    http://localhost:8081
+5. Fertig!
+    Ihre Applikation ist gestartet und Sie können nun alle Funktionen nutzen.
 
-Folgende Dienste stehen während der Ausführung im Profil `dev` zur Verfügung:
-- REST-Schnittstelle der Applikation: http://localhost:8081
-- Dashboard der H2 Datenbank: http://localhost:8081/h2-console
