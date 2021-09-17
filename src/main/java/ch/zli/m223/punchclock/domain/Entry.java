@@ -31,11 +31,11 @@ public class Entry {
 
     @ManyToOne
     @JoinColumn(name = "CATEGORY_ID")
-    private ApplicationUser category;
+    private Category category;
 
     @ManyToOne
     @JoinColumn(name = "MOOD_ID")
-    private ApplicationUser mood;
+    private Mood mood;
 
     public Long getId() {
         return id;
@@ -67,5 +67,21 @@ public class Entry {
 
     public void setUser(ApplicationUser user) {
         this.user = user;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+    
+    public Mood getMood() {
+        return mood;
+    }
+
+    public void setMood(Mood mood) {
+        this.mood = mood;
     }
 }

@@ -9,7 +9,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/entries")
+@RequestMapping("/moods")
 public class MoodController {
     private MoodService moodService;
 
