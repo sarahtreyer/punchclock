@@ -17,13 +17,21 @@ public class EntryController {
         this.entryService = entryService;
     }
 
+    /**
+     * Get all Entries
+     * @return
+     */
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<Entry> getAllEntries() {
         return entryService.findAll();
     }
 
-    
+    /**
+     * Create and save a new Entry
+     * @param entry
+     * @return
+    */
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Entry createEntry(@Valid @RequestBody Entry entry) {

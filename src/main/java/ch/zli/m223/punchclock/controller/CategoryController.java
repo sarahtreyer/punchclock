@@ -17,12 +17,21 @@ public class CategoryController {
         this.categoryService = categoryService;
     }
 
+    /**
+     * Get all Entries from a Category
+     * @return
+     */
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<Category> getAllEntries() {
         return categoryService.findAll();
     }
 
+    /**
+     * Create and save a new Category
+     * @param category
+     * @return
+     */
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Category createCategory(@Valid @RequestBody Category category) {

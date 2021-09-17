@@ -17,12 +17,21 @@ public class MoodController {
         this.moodService = moodService;
     }
 
+    /**
+     * Get all Entries from a Mood
+     * @return
+     */
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<Mood> getAllEntries() {
         return moodService.findAll();
     }
 
+    /**
+     * Create and save a new Mood
+     * @param mood
+     * @return
+     */
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Mood createMood(@Valid @RequestBody Mood mood) {

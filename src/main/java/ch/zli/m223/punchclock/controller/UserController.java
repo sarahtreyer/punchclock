@@ -28,15 +28,13 @@ public class UserController {
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
 
+    /**
+     * Create a new User with a Username and Password
+     * @param user
+     */
     @PostMapping("/sign-up")
     public void signUp(@RequestBody ApplicationUser user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         applicationUserRepository.save(user);
     }
-
-    @GetMapping("/account") 
-    public String showAccount(@RequestBody ApplicationUser user) {
-        return user.getUsername();
-    }
-
 }
