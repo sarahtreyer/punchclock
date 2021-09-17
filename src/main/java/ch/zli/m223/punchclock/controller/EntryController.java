@@ -23,6 +23,7 @@ public class EntryController {
         return entryService.findAll();
     }
 
+    
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Entry createEntry(@Valid @RequestBody Entry entry) {
