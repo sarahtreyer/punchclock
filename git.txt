@@ -1,3 +1,9 @@
+commit a78d4b3d732dc65315f1edea0ed76623fb3e49b5
+Author: Sarah <sarah_treyer@yahoo.com>
+Date:   Fri Sep 17 07:29:40 2021 -0700
+
+    README corrections
+
 commit 0e375a18e12354f20742ce958e231458dd6e6c20
 Author: Sarah <sarah_treyer@yahoo.com>
 Date:   Fri Sep 17 07:08:37 2021 -0700
@@ -16,9 +22,9 @@ Date:   Fri Sep 17 06:38:51 2021 -0700
 
     Sign Up Function & .html File, Sign In .html File
 
-commit 2bccfcd24f041dbb96e59e8b7dc94a27bb566944
+commit 97c800c11572224d37cf767afb40071c5cb2efd2
 Author: Sarah <sarah_treyer@yahoo.com>
-Date:   Fri Sep 17 06:36:11 2021 -0700
+Date:   Fri Sep 17 02:03:55 2021 -0700
 
     All Controller, Services, Repositorys added
 
